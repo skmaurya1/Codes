@@ -1,4 +1,4 @@
- # Create a VM(SqlServerDW) from a specialized VHD disk
+ # Create a VM(LabVM) from a specialized VHD disk
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fskmaurya1%2Fcodes%2FHOL-LabVM%2Fazuredeploy.json" target="_blank">
         <img src="http://azuredeploy.net/deploybutton.png"/>
