@@ -23,20 +23,20 @@ If you are looking to accomplish the above scenario through PowerShell instead o
     $location = "southeastasia"
 
     ## Storage
-    $storageName = "sqlserverdwstoresg"
+    $storageName = "labvmstoresg"
     $storageType = "Standard_LRS"
 
     ## Network
-    $nicname = "sqlserverdwnw"
+    $nicname = "labvmnw"
     $subnet1Name = "subnet1"
-    $vnetName = "ssdwnet"
+    $vnetName = "labvmnet"
     $vnetAddressPrefix = "10.0.0.0/16"
     $vnetSubnetAddressPrefix = "10.0.0.0/24"
 
     ## Compute
-    $vmName = "SqlServerDW"
-    $computerName = "SqlServerDW"
-    $vmSize = "Standard_Ds1_V2"
+    $vmName = "LabVM"
+    $computerName = "LabVM"
+    $vmSize = "Standard_D2s_V3"
     $osDiskName = $vmName + "osDisk"
 
 ##### Resource Group
@@ -58,7 +58,7 @@ If you are looking to accomplish the above scenario through PowerShell instead o
 
     $vm = Add-AzureRmVMNetworkInterface -VM $vm -Id $nic.Id
 
-    $osDiskUri = "https://storageatsea.blob.core.windows.net/storagecontainer-sea/sqlserverdwseadisk.vhd"
+    $osDiskUri = "https://storageatsea.blob.core.windows.net/storagecontainer-sea/labvmseadisk.vhd"
     $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osDiskName -VhdUri $osDiskUri -CreateOption attach -Windows
 
     ## Create the VM in Azure
