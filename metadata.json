@@ -1,0 +1,8 @@
+{
+  "itemDisplayName": "Create a VM from a specialized VHD disk",
+  "description": "This template creates a VM from a specialized VHD",
+  "summary": "This template creates a VM from a specialized VHD",
+  "githubUsername": "Test",
+  "dateUpdated": "2018-03-28"
+}
+
