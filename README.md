@@ -36,7 +36,7 @@ If you are looking to accomplish the above scenario through PowerShell instead o
     ## Compute
     $vmName = "SqlServerDW"
     $computerName = "SqlServerDW"
-    $vmSize = "Standard_Ds1V2"
+    $vmSize = "Standard_Ds1_V2"
     $osDiskName = $vmName + "osDisk"
 
 ##### Resource Group
@@ -58,7 +58,7 @@ If you are looking to accomplish the above scenario through PowerShell instead o
 
     $vm = Add-AzureRmVMNetworkInterface -VM $vm -Id $nic.Id
 
-    $osDiskUri = "https://storageatsea.blob.core.windows.net/storagecontainer-sea/sqlserverseadisk.vhd"
+    $osDiskUri = "https://storageatsea.blob.core.windows.net/storagecontainer-sea/sqlserverdwseadisk.vhd"
     $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osDiskName -VhdUri $osDiskUri -CreateOption attach -Windows
 
     ## Create the VM in Azure
