@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "osDiskVhdUri": {
-            "value": "https://storageatsea.blob.core.windows.net/storagecontainer-sea/sqlserverseadisk.vhd"
+            "value": "https://storageatsea.blob.core.windows.net/storagecontainer-sea/sqlserverdwseadisk.vhd"
         },
         "osType": {
             "value": "Windows"
