@@ -9,7 +9,7 @@
             "value": "Windows"
         },
         "vmSize": {
-            "value": "Standard_Ds1V2"
+            "value": "Standard_Ds1_V2"
         },
         "vmName": {
             "value": "SqlServerDW"
