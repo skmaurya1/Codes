@@ -14,6 +14,7 @@
         "Windows",
         "Linux"
       ],
+       "defaultValue": "Windows",
       "metadata": {
         "description": "Type of OS on the existing vhd"
       }
@@ -27,6 +28,7 @@
     },
     "vmName": {
       "type": "string",
+       "defaultValue": "SqlServerDW",
       "metadata": {
         "description": "Name of the VM"
       }
