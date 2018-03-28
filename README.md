@@ -10,7 +10,7 @@
 ```
 NOTE
 
-This template will create an additional Standard_GRS storage account for enabling boot diagnostics each time you execute this template. To avoid running into storage account limits, it's best to delete the storage account when the VM is deleted.
+This template will create an additional Standard_LRS storage account for enabling boot diagnostics each time you execute this template. To avoid running into storage account limits, it's best to delete the storage account when the VM is deleted.
 ```
 
 This template creates a VM from a specialized VHD. The VHD file can be located in a storage account using a tool such as Azure Storage Explorer http://storageexplorer.com/
@@ -24,7 +24,7 @@ If you are looking to accomplish the above scenario through PowerShell instead o
 
     ## Storage
     $storageName = "sqlserverdwstoresg"
-    $storageType = "Standard_GRS"
+    $storageType = "Standard_LRS"
 
     ## Network
     $nicname = "sqlserverdwnw"
@@ -58,8 +58,8 @@ If you are looking to accomplish the above scenario through PowerShell instead o
 
     $vm = Add-AzureRmVMNetworkInterface -VM $vm -Id $nic.Id
 
-    $osDiskUri = "https://storageatsea.blob.core.windows.net/storagecontainer-sea/sqlsersadisk.vhd"
-    $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osDiskName -VhdUri $osDiskUri -CreateOption attach -Linux
+    $osDiskUri = "https://storageatsea.blob.core.windows.net/storagecontainer-sea/sqlserverseadisk.vhd"
+    $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osDiskName -VhdUri $osDiskUri -CreateOption attach -Windows
 
     ## Create the VM in Azure
     New-AzureRmVM -ResourceGroupName $rgName -Location $location -VM $vm -Verbose -Debug
