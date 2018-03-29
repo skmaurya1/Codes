@@ -45,7 +45,7 @@
     "virtualNetworkName": "LabVMVNET",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
-    "nicName": "specializedVMNic"
+    "nicName": "LabVMNic"
   },
   "resources": [
     {
