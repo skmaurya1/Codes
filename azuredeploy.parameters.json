@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "osDiskVhdUri": {
-            "value": "https://storageaccountsg.blob.core.windows.net/vhdforhol/labvmseadisk.vhd"
+            "value": "https://nagaraj.blob.core.windows.net/nagaraj/labvmseadisk.vhd"
         },
         "osType": {
             "value": "Windows"
