@@ -57,7 +57,7 @@ If you are looking to accomplish the above scenario through PowerShell instead o
     $vm = New-AzureRmVMConfig -VMName $vmName -VMSize $vmSize
 
     $vm = Add-AzureRmVMNetworkInterface -VM $vm -Id $nic.Id
-    $osDiskUri = "https://storageaccountsg.blob.core.windows.net/vhdforhol/labvmseadisk.vhd"
+    $osDiskUri = "https://techdaystorageac.blob.core.windows.net/techdayvhd/techday.vhd"
  
     $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osDiskName -VhdUri $osDiskUri -CreateOption attach -Windows
 
