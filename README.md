@@ -23,7 +23,7 @@ If you are looking to accomplish the above scenario through PowerShell instead o
     $location = "southeastasia"
 
     ## Storage
-    $storageName = "nagaraj123"
+    $storageName = "pathsg001"
     $storageType = "Standard_LRS"
 
     ## Network
